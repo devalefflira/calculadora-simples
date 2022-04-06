@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora | Simple Mode</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora | Simple Mode</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <h2>Calculadora</h2>
+                <p id="result"></p>
+                <table>
+                    <tr>
+                        <td><button class="operator-button" onclick="clean()">C</button></td>
+                        <td><button class="operator-button" onclick="erase()">&lt;</button></td>
+                        <td><button class="operator-button" onclick="insert('/')">/</button></td>
+                        <td><button class="operator-button" onclick="insert('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number-button" onclick="insert('7')">7</button></td>
+                        <td><button class="number-button" onclick="insert('8')">8</button></td>
+                        <td><button class="number-button" onclick="insert('9')">9</button></td>
+                        <td><button class="operator-button" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number-button" onclick="insert('4')">4</button></td>
+                        <td><button class="number-button" onclick="insert('5')">5</button></td>
+                        <td><button class="number-button" onclick="insert('6')">6</button></td>
+                        <td><button class="operator-button" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number-button" onclick="insert('1')">1</button></td>
+                        <td><button class="number-button" onclick="insert('2')">2</button></td>
+                        <td><button class="number-button" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="number-button" id="equal-button" onclick="calculate()">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="number-button" id="zero-button" onclick="insert('0')">0</button>
+                        </td>
+                        <td><button class="number-button" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>Elaborado por: Áleff Lira, em 06/04/2022. Todos os direitos reservados.</h3>
+    </footer>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
